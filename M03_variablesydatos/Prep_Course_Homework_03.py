@@ -7,7 +7,8 @@
 
 # In[7]:
 
-
+a=8
+print(a)
 
 
 # 2) Imprimir el tipo de dato de la constante 8.5
@@ -15,7 +16,7 @@
 # In[3]:
 
 
-
+type(8.5)
 
 
 # 3) Imprimir el tipo de dato de la variable creada en el punto 1
@@ -23,7 +24,7 @@
 # In[8]:
 
 
-
+type(a)
 
 
 # 4) Crear una variable que contenga tu nombre
@@ -31,13 +32,13 @@
 # In[2]:
 
 
-
+mi_nombre= 'Carolina De Poli'
 
 # 5) Crear una variable que contenga un número complejo
 
 # In[3]:
 
-
+a = 1 + 2j
 
 
 
@@ -45,7 +46,7 @@
 
 # In[4]:
 
-
+type (a)
 
 
 
@@ -61,15 +62,15 @@ pi = 3.1416
 
 # In[3]:
 
-
+var1 = True
+var2 = 'True'
 
 
 
 # 9) Imprimir el tipo de dato correspondientes a las variables creadas en el punto 8
 
 # In[5]:
-
-
+print ('la variable 1 es de tipo ', type(var1), ' y la variable 2  es de tipo ', type(var2))
 
 
 
@@ -77,7 +78,7 @@ pi = 3.1416
 
 # In[1]:
 
-
+a= 4 + 5.1
 
 
 
@@ -85,22 +86,23 @@ pi = 3.1416
 
 # In[2]:
 
-
+a= 1 + 1j
+b= 1 + 2j
+print (a + b)
 
 
 
 # 12) Realizar una operación de suma de un número real y otro complejo
 
-# In[4]:
+# In[4]
 
-
-
-
+c= a + 2.5
+print(c)
 
 # 13) Realizar una operación de multiplicación
 
 # In[5]:
-
+print( 4 * 5)
 
 
 
@@ -109,14 +111,15 @@ pi = 3.1416
 
 # In[6]:
 
-
+print(2**8)
 
 
 # 15) Obtener el cociente de la división de 27 entre 4 en una variable y luego mostrarla
 
 # In[8]:
 
-
+a= 27/4
+print(a)
 
 
 
@@ -124,7 +127,7 @@ pi = 3.1416
 
 # In[9]:
 
-
+print(27//4)
 
 
 
@@ -132,7 +135,7 @@ pi = 3.1416
 
 # In[1]:
 
-
+print(27%4)
 
 
 
@@ -140,7 +143,7 @@ pi = 3.1416
 
 # In[2]:
 
-
+6 * 4 + 3
 
 
 
@@ -148,7 +151,9 @@ pi = 3.1416
 
 # In[3]:
 
-
+a= 'Alta '
+b= 'Gracia'
+print(a + b)
 
 
 
@@ -156,7 +161,7 @@ pi = 3.1416
 
 # In[4]:
 
-
+'2' == 2
 
 
 
@@ -164,7 +169,7 @@ pi = 3.1416
 
 # In[11]:
 
-
+2 == int('2')
 
 
 
@@ -172,7 +177,7 @@ pi = 3.1416
 
 # In[12]:
 
-
+# porque se usó coma en lugar de punto para separar la parte decimal
 
 
 
@@ -182,14 +187,16 @@ pi = 3.1416
 
 
 
-
+a= 3
+a -=1
+print(a)
 
 # 24) Realizar la operacion 1 << 2 ¿Por qué da ese resultado? ¿Qué es el sistema de numeración binario?
 
 # In[29]:
 
 
-
+1 << 2
 
 
 # 25) Realizar la operación 2 + '2' ¿Por qué no está permitido? ¿Si los dos operandos serían del mismo tipo, siempre arrojaría el mismo resultado?
@@ -197,13 +204,21 @@ pi = 3.1416
 # In[23]:
 
 
-
-
+2 + '2'
+# no está permitido por que uno es numero entero y el otro un string. Para que sea valida deberia usarse una operacion para cambiar el tipo de dato
+# ejemplo
+float(2) + float('2')
+int(2) + int('2')
+str(2) + str('2')
 
 
 # 26) Realizar una operación válida entre valores de tipo entero y string
 
 # In[30]:
+a= 52
+b= ' mi edad es '
+print(str(b) + str(a))
 
 
 
+# %%
